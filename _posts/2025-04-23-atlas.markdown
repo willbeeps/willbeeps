@@ -1,0 +1,19 @@
+---
+layout: post
+title:  "Notes on the Atlas of AI"
+date:   2025-04-23 18:11:07 +0000
+category: AI
+---
+
+I enjoyed reading Kate Crawford’s _Atlas of AI: Power, Politics, and the Planetary Costs of Artificial Intelligence_ last year.
+
+Two snippets that gave me pause: 
+1. The debate about AI and its impact on human worker agency can be seen as a continuum of long-standing issues: 
+ _“For Smith, the economic value of an object was understood in relation to the cost of the labor required to produce it. In Babbage’s rendering, however, value in a factory was derived from investment in the design of the manufacturing process rather than from the labor force of its employees. The real innovation was the logistical process, while workers simply enacted the tasks defined for them and operated the machines as instructed. 
+The factory is conceived as a rational calculating machine with only one weakness: its frail and untrustworthy human labor force. There are risks in centering tech workers and technology in what are more generalized and long-standing labor struggles. All kinds of workers are subject to the extractive technical infrastructures that seek to control and analyze time to its finest grain.”_
+
+2. And on that ‘extractive’ point, a reminder to think more broadly about the media we generate. Jussi Parikka suggests we think of media not from a McLuhan perspective, where it's all an extension of our senses — but rather as **extensions of Earth**. 
+_"Computational media now participate in geological (and climatological) processes, from the transformation of the earth’s materials into infrastructures and devices to the powering of these new systems with oil and gas reserves. Reflecting on media and technology as geological processes enables us to consider the radical depletion of nonrenewable resources required to drive the technologies of the present moment”_
+I'm gratified by how much this perspective is being considered by the company I work for. I feel we'll all have to keep banging this drum for the foreseeable...  Here's a link to Parikka's paper on [A Geology of Media](https://culturetechnologypolitics.wordpress.com/wp-content/uploads/2015/11/jussi-parikka-a-geology-of-media-intro.pdf).
+
+

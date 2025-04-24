@@ -1,0 +1,61 @@
+---
+layout: hero
+title: Work
+permalink: /work/
+hero_heading: It’s been a while since work looked like this
+hero_image: /assets/images/postit_wall.jpg
+hero_image_alt: Lots of Post-Its stuck to a wall
+---
+
+<p>Post-pandemic design makes for fewer photo opportunities, but the role is ever more consequential. Talking about ‘raised expectations’ in digital feels a little old-fashioned in 2025. Our expectation of our water taps is that water will always be there. There isn't much of a scale to be applied, no higher or lower standards. The internet is a utility, and a service that works online or offline is table stakes.</p>
+
+<p>But does every company know what services people need it to deliver, and why, and how? There's the challenge. I help organisations make decisions about which problems to solve, and how to solve them.</p>
+<p>I've spent almost two decades working in user-centred design, primarily for UK consultancies. The job involves working out ways to explore broad problem areas (that's the research bit), then come up with concepts to resolve the challenges uncovered, to reduce organisational risk and make people's lives easier. And then get those things designed in the right way.</p>
+
+<h3>Recent work</h3>
+<p><a href="mailto:will@willbeeps.com">Drop me a line</a> if you want details about any of these.</p>
+<!-- CASE LIST -->
+{% assign all_positions = "" | split: "" %}
+
+{% for post in site.cases %}
+  {% if post.position %}
+    {% for p in post.position %}
+      {% assign all_positions = all_positions | push: p %}
+    {% endfor %}
+  {% endif %}
+{% endfor %}
+
+{% assign unique_positions = all_positions | uniq | sort %}
+
+<!--<div class="filters">
+  <button class="filter-button active" data-category="all">All</button>
+  {% for position in unique_positions %}
+    <button class="filter-button" data-category="{{ position }}">
+      {{ position }}
+    </button>
+  {% endfor %}
+</div>
+-->
+
+<!-- CASE LISTING -->
+{% assign sorted_cases = site.cases | sort: "date" | reverse %}
+
+<section class="grid-listing">
+  {% for post in sorted_cases %}
+    <article class="card" data-positions="{{ post.position | join: ',' }}">
+      <!-- <h2>{{ post.title }}</h2>-->
+
+      {% if post.image %}
+        <img src="{{ post.image }}" alt="{{ post.image_alt | default: post.title }}" class="card-image">
+      {% endif %}
+
+      <subtitle>{{ post.date | date: "%Y" }}</subtitle>
+
+      {% if post.position %}
+        <h4>{{ post.position | join: ", " }}</h4>
+      {% endif %}
+
+      <!--       <p>{{ post.content | markdownify }}</p> -->
+    </article>
+  {% endfor %}
+</section>

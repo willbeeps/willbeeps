@@ -1,0 +1,16 @@
+---
+---
+
+$font-stack: Helvetica, sans-serif;
+$primary-color: #333;
+
+h1, h2, h3 {
+	font-family: 'Poiret One';
+}
+
+.showoff {font-size: 5.2rem;}
+
+body {
+  font: 100% $font-stack;
+  color: $primary-color;
+}

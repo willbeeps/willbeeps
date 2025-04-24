@@ -1,0 +1,56 @@
+---
+# Feel free to add content and custom Front Matter to this file.
+# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
+
+layout: default
+---
+
+<section class="hero">
+    <h1>Making things for the web is still fun. <span class="aside">No, I don't need a better definition of fun.</span> And still hard to get right. </h1>
+</section>
+
+<main class="content">
+    <h3>I work as a researcher and designer of services and experiences.</h3> 
+    <p>It’s a difficult job to explain to family and friends, but I've been doing it a while so I should be able to manage by now. <a href="/work">Here's a wee bit about work I've done</a>.</p> 
+
+    <p>Currently, I’m working at a consultancy called <a href="https://valtech.com">Valtech</a>, and live in Somerset. You can read a bit more about <a href="/now">where I’m at right now</a></p>
+
+    <p>But a weblog wouldn’t be a weblog without <a href="/writing">a sporadically-updated feed</a> of thoughts, links and information on speaking engagements (spoiler alert: not many of these).</p>
+
+    <p>Thanks for stopping by.</p>
+
+</main>
+<div class="cosmos-section">
+    <div class="cosmos">
+      <div class="stars"></div>
+      <div class="stars-secondary"></div>
+      <div class="shooting-star"></div>
+      <div class="shooting-star"></div>
+      <div class="shooting-star"></div>
+      <div class="twinkle-star"></div>
+      <div class="twinkle-star"></div>
+      <div class="twinkle-star"></div>
+      <div class="twinkle-star"></div>
+      <div class="twinkle-star"></div>
+      <div class="twinkle-star"></div>
+      <div class="twinkle-star"></div>
+      <div class="twinkle-star"></div>
+      <div class="twinkle-star"></div>
+      <div class="twinkle-star"></div>
+  </div>
+  <div class="snippets-content">
+    <h3>Snippets of interest</h3>
+    <p>A never-ending stream of distraction devices</p>
+    <ul>
+      {% for link in site.data.links %}
+      <li>
+          <a href="{{ link.url }}"  target="_blank" rel="noopener noreferrer">{{ link.title }}</a> - {{ link.description }}
+          {% if link.date %}
+          <div class="link-date">{{ link.date }}</div>
+          {% endif %}
+      </li>
+      {% endfor %}
+  </ul>
+</div>
+
+
